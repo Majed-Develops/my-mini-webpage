@@ -31,8 +31,10 @@ body{
 
 
 li{
-  font-weight: bold;;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
+
 
 .condition{
     font-weight: bolder;
@@ -116,15 +118,38 @@ li{
     padding: 10px;
 }
 
-button{
+#likeButton{
   background-color: green;
-  color: black;
   border: 3px solid black;
   border-radius: 10px;
 }
 
-button:hover{
+#likeButton:hover{
   background-color: darkgreen;
   color: black;
+  transition: 0.3s;
+}
+
+#cancel{
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#cancel:hover{
+  background-color: darkred;
+  transition: 0.3s;
+}
+
+#deleteAllPageBtn{
+  position: sticky;
+  top: 0;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#deleteAllPageBtn:hover{
+  background-color: darkred;
   transition: 0.3s;
 }

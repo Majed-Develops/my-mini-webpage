@@ -28,7 +28,7 @@ function showThirdPoint(){
   let thirdPoint = document.querySelector(".pointThree");
   let condition = document.querySelector(".condition");
   thirdPoint.textContent = "an LLM Engineer";
-  condition.textContent = "But started as a:"
+  condition.textContent = "But started as a:";
 }
 
 pointThreeBtn.addEventListener("click", showThirdPoint);
@@ -66,12 +66,38 @@ let likeBtn = document.getElementById("likeButton");
 
 let likesNumber = document.querySelector(".likesCounter");
 
+let removeLikesBtn = document.getElementById("cancel");
+
 function likesCounter(){
   let currentNumber = Number(likesNumber.textContent);
+  let likesStatement = document.querySelector(".likesStatement");
 
   likesNumber.textContent = currentNumber + 1;
-  likesStatement.textContent = `Likes: x${currentNumber}`
 
 }
 
 likeBtn.addEventListener("click", likesCounter);
+
+
+
+function removeLikes(){
+
+  likesNumber.textContent = 0;
+}
+
+removeLikesBtn.addEventListener("click", removeLikes);
+
+
+let webpageDeleteBtn = document.getElementById("deleteAllPageBtn");
+
+function deletePageContent(){
+  let webpage = document.querySelector(".webpage");
+
+  webpage.innerHTML = "<h1 style='color: white'>Page deleted!</h1>";
+
+  document.querySelector(".webpage").style.backgroundColor = "red";
+
+
+}
+
+webpageDeleteBtn.addEventListener("click", deletePageContent);
