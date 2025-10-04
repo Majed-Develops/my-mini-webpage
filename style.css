@@ -1,6 +1,7 @@
 body{
   background: linear-gradient(to right, yellow, orange);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 100%;
 }
 
 .title{

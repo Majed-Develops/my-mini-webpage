@@ -118,6 +118,7 @@ cadillacPhotoBtn.addEventListener("click", function() {
     cadillacImg.style.width = "900px";
     cadillacImg.style.border = "3px solid black";
     cadillacImg.style.borderRadius = "10px";
+    cadillacImg.style.maxWidth = "100%";
     cadillacImg.style.textAlign = "center";
 
     cadillacImageSection.appendChild(cadillacImg);
@@ -152,6 +153,7 @@ malibuPhotoBtn.addEventListener("click", function(){
     malibuImg.style.width = "700px";
     malibuImg.style.border = "3px solid black";
     malibuImg.style.borderRadius = "10px";
+    malibuImg.style.maxWidth = "100%";
     malibuImg.style.textAlign = "center";
 
     malibuPhotoSection.appendChild(malibuImg);
@@ -182,6 +184,7 @@ fzImgBtn.addEventListener("click", function(){
     fzImg.src = "/images/eagle-fz.jpeg";
     fzImg.alt = "My Yamaha FZ150i";
     fzImg.style.width = "900px";
+    fzImg.style.maxWidth = "100%";
     fzImg.style.border = "3px solid grey";
     fzImg.style.borderRadius = "10px";
 
