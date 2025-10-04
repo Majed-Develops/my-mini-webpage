@@ -11,14 +11,14 @@ const resetBtn = document.getElementById("reset");
 
 function showFirstPoint(){
     let firstPoint = document.querySelector(".pointOne");
-    firstPoint.textContent = "a Cybersecurity Red Team / Blue Team Hacker";
+    firstPoint.textContent = "a future Cybersecurity Red Team / Blue Team Hacker";
 };
 
 pointOneBtn.addEventListener("click", showFirstPoint);
 
 function showSecondPoint(){
   let secondPoint = document.querySelector(".pointTwo");
-  secondPoint.textContent = "a Software Developer";
+  secondPoint.textContent = "a future Software Developer";
 }
 
 pointTwoBtn.addEventListener("click", showSecondPoint);
@@ -27,7 +27,7 @@ pointTwoBtn.addEventListener("click", showSecondPoint);
 function showThirdPoint(){
   let thirdPoint = document.querySelector(".pointThree");
   let condition = document.querySelector(".condition");
-  thirdPoint.textContent = "an LLM Engineer";
+  thirdPoint.textContent = "a future LLM Engineer";
   condition.textContent = "But started as a:";
 }
 
@@ -101,3 +101,99 @@ function deletePageContent(){
 }
 
 webpageDeleteBtn.addEventListener("click", deletePageContent);
+
+const cadillacImageSection = document.getElementById("cadillacPhotoSection");
+const cadillacPhotoBtn = document.getElementById("cadillacPhotoButton");
+const cadillacImgStatement = document.querySelector(".cadillacPhotoStatement");
+
+let isCadillacImageVisible = false;
+
+
+
+cadillacPhotoBtn.addEventListener("click", function() {
+  if(!isCadillacImageVisible){
+    const cadillacImg = document.createElement("img");
+    cadillacImg.src = "/images/cadillac-escalade.jpg";
+    cadillacImg.alt = "Cadillac Escalde 2002";
+    cadillacImg.style.width = "900px";
+    cadillacImg.style.border = "3px solid black";
+    cadillacImg.style.borderRadius = "10px";
+    cadillacImg.style.textAlign = "center";
+
+    cadillacImageSection.appendChild(cadillacImg);
+    cadillacPhotoBtn.textContent = "Hide Image";
+    cadillacImgStatement.textContent = "Click this button to hide the Cadillac Escalde Image"
+    isCadillacImageVisible = true;
+    
+  }else{
+    cadillacImageSection.innerHTML = "";
+    cadillacPhotoBtn.textContent = "Show Image";
+    cadillacImgStatement.textContent = "Click this button to view the Cadillac Escalade Image.";
+    isCadillacImageVisible = false;
+
+  }
+
+});
+
+
+const malibuPhotoBtn = document.getElementById("malibuPhotoButton");
+
+const malibuPhotoSection = document.getElementById("malibuPhotoSection");
+
+const malibuPhotoStatement = document.querySelector(".malibuPhotoStatement");
+
+let isMalibuImgVisible = false;
+
+malibuPhotoBtn.addEventListener("click", function(){
+  if(!isMalibuImgVisible){
+    const malibuImg = document.createElement("img");
+    malibuImg.src = "/images/malibu-2015.jpg";
+    malibuImg.alt = "Cevrolet Malibu LT 2015 (White)";
+    malibuImg.style.width = "700px";
+    malibuImg.style.border = "3px solid black";
+    malibuImg.style.borderRadius = "10px";
+    malibuImg.style.textAlign = "center";
+
+    malibuPhotoSection.appendChild(malibuImg);
+    malibuPhotoBtn.textContent = "Hide Image";
+    malibuPhotoStatement.textContent = "Click this button to hide the Chevrolet Malibu Image."
+    isMalibuImgVisible = true;
+  }else{
+    malibuPhotoSection.innerHTML = "";
+    malibuPhotoBtn.textContent = "Show Image";
+    malibuPhotoStatement.textContent = "Click this button to view the Chevrolet Malibu Image."
+    isMalibuImgVisible = false;
+  }
+  
+});
+
+
+const fzImgBtn = document.getElementById("fzImageBtn");
+
+const fzImgSection = document.getElementById("fzImgSection");
+
+const fzStatement = document.querySelector(".fzStatement");
+
+let isFzVisible = false;
+
+fzImgBtn.addEventListener("click", function(){
+  if(!isFzVisible){
+    const fzImg = document.createElement("img");
+    fzImg.src = "/images/eagle-fz.jpeg";
+    fzImg.alt = "My Yamaha FZ150i";
+    fzImg.style.width = "900px";
+    fzImg.style.border = "3px solid grey";
+    fzImg.style.borderRadius = "10px";
+
+    fzImgSection.appendChild(fzImg);
+    fzImgBtn.textContent = "Hide Image";
+    fzStatement.textContent = "Click this button to hide Eagle";
+    isFzVisible  = true;
+  }else{
+    fzImgSection.innerHTML = "";
+    fzImgBtn.textContent = "Show Image";
+    fzStatement.textContent = "Click this button to view Eagle";
+    isFzVisible = false;
+
+  }
+});

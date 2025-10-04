@@ -50,6 +50,7 @@ li{
 .condition{
     font-weight: bolder;
     color: red;
+    font-style: italic;
 }
 
 #showPointOne{
@@ -208,7 +209,6 @@ li{
   position: relative;
   display: inline-block;
   cursor: pointer;
-  cursor: pointer;
 }
 
 .tooltipimg{
@@ -226,3 +226,86 @@ li{
   visibility: visible;
 }
 
+
+#cadillacPhotoButton{
+  background: linear-gradient(to right, blue, red);
+  color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+
+#cadillacPhotoButton:hover{
+background: linear-gradient(to left, blue, red);
+transition: 0.3s;
+}
+
+#malibuPhotoButton{
+  background: linear-gradient(to right, grey, white);
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+#malibuPhotoButton:hover{
+  background: linear-gradient(to left, grey, white);
+}
+
+.photoSection{
+  background-color: tomato;
+   text-align: left;
+  padding: 5px;
+  margin: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.photoSection h3{
+  text-align: center;
+}
+
+
+.tooltipbiketext{
+  text-decoration: underline;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+
+.tooltipbike{
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltipbiketext:hover .tooltipbike{
+  visibility: visible;
+}
+
+#fzImageBtn{
+  background: linear-gradient(to right, goldenrod, black);
+  color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+#fzImageBtn:hover{
+  background: linear-gradient(to left, goldenrod, black);
+}
