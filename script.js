@@ -128,7 +128,7 @@ cadillacPhotoBtn.addEventListener("click", function() {
   }else{
     cadillacImageSection.innerHTML = "";
     cadillacPhotoBtn.textContent = "Show Image";
-    cadillacImgStatement.textContent = "Click this button to view the Cadillac Escalade Image.";
+    cadillacImgStatement.textContent = "Click this button to view the Cadillac Escalade image.";
     isCadillacImageVisible = false;
 
   }
@@ -156,12 +156,12 @@ malibuPhotoBtn.addEventListener("click", function(){
 
     malibuPhotoSection.appendChild(malibuImg);
     malibuPhotoBtn.textContent = "Hide Image";
-    malibuPhotoStatement.textContent = "Click this button to hide the Chevrolet Malibu Image."
+    malibuPhotoStatement.textContent = "Click this button to hide the Chevrolet Malibu image."
     isMalibuImgVisible = true;
   }else{
     malibuPhotoSection.innerHTML = "";
     malibuPhotoBtn.textContent = "Show Image";
-    malibuPhotoStatement.textContent = "Click this button to view the Chevrolet Malibu Image."
+    malibuPhotoStatement.textContent = "Click this button to view the Chevrolet Malibu image."
     isMalibuImgVisible = false;
   }
   
@@ -187,12 +187,12 @@ fzImgBtn.addEventListener("click", function(){
 
     fzImgSection.appendChild(fzImg);
     fzImgBtn.textContent = "Hide Image";
-    fzStatement.textContent = "Click this button to hide Eagle";
+    fzStatement.textContent = "Click this button to hide Eagle.";
     isFzVisible  = true;
   }else{
     fzImgSection.innerHTML = "";
     fzImgBtn.textContent = "Show Image";
-    fzStatement.textContent = "Click this button to view Eagle";
+    fzStatement.textContent = "Click this button to view Eagle.";
     isFzVisible = false;
 
   }
