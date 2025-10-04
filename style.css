@@ -9,6 +9,13 @@ body{
     text-align: center;
 }
 
+.webpage{
+  border: 3px dotted black;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 .content{
     background-color: lightsalmon;
     border: 3px solid black;
@@ -16,6 +23,8 @@ body{
     margin-bottom: 30px; 
     box-shadow: 10px 5px;
     padding: 15px;
+    margin: 10px;
+
 }
 
 .intro{
@@ -27,12 +36,14 @@ body{
   border: 3px solid black;
   border-radius: 10px;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 
 li{
   font-weight: bold;
   margin-bottom: 10px;
+  list-style-type: none;
 }
 
 
@@ -108,6 +119,8 @@ li{
   border: 3px solid black;
   border-radius: 10px;
   padding: 5px;
+  text-align: left;
+  margin: 10px;
 }
 
 .likesCounter{
@@ -153,3 +166,63 @@ li{
   background-color: darkred;
   transition: 0.3s;
 }
+
+.moreAboutMe{
+  text-align: left;
+  padding: 5px;
+  background-color:hotpink;
+  margin: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.moreAboutMe h2{
+  text-align: center;
+}
+
+.tooltip{
+  text-decoration: underline;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltiptext{
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+
+.tooltipimgtext{
+  text-decoration: underline;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.tooltipimg{
+  visibility: hidden;
+  width: 130px;
+  background-color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltipimgtext:hover .tooltipimg{
+  visibility: visible;
+}
+
