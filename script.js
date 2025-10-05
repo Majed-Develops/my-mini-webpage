@@ -217,11 +217,34 @@ const myFavCarsInput = document.querySelector(".myFavCarsInput");
 
 function displayCars(){
   carList.innerHTML = "";
-  for(let i = 0; i < carInputStorage.length; i++){
-    let li = document.createElement("li");
-    li.textContent = carInputStorage[i];
-    carList.appendChild(li);
-   
+    if(carInput.value === ""){
+      let warning = document.createElement("p");
+      warning.textContent = "Please input car first!"
+      warning.style.color = "red";
+      carList.appendChild(warning);
+      setTimeout(() => { warning.textContent = ""; }, 3000);
+    }else{
+      for(let i = 0; i < carInputStorage.length; i++){
+      let li = document.createElement("li");
+      li.style.margin = "5px";
+      let removeCarBtn = document.createElement("button");
+      removeCarBtn.textContent = "X";
+      removeCarBtn.style.backgroundColor = "red";
+      removeCarBtn.style.color = "white";
+      removeCarBtn.style.border = "3px solid black"
+      removeCarBtn.style.borderRadius = "10px";
+      removeCarBtn.style.marginLeft = "5px";
+      removeCarBtn.style.backgroundColorHover
+      li.textContent = carInputStorage[i];
+      carList.appendChild(li);
+      
+      li.appendChild(removeCarBtn);
+      removeCarBtn.addEventListener("click", function(){
+      
+      carInputStorage.splice(i, 1);
+      displayCars();
+    })
+    }
   }
 }
 
@@ -232,5 +255,10 @@ function addFavCar(){
 };
 
 
+
+  
+
+
 carAddBtn.addEventListener("click", addFavCar);
 
+removeCarBtn.addEventListener("click", removeCar);
