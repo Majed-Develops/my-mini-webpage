@@ -200,3 +200,37 @@ fzImgBtn.addEventListener("click", function(){
 
   }
 });
+
+
+// Favorite Cars Section
+
+const carInput = document.getElementById("carInput");
+
+const carAddBtn = document.getElementById("carAddButton");
+
+const carList = document.getElementById("carList");
+
+const carInputStorage = [];
+
+const myFavCarsInput = document.querySelector(".myFavCarsInput");
+
+
+function displayCars(){
+  carList.innerHTML = "";
+  for(let i = 0; i < carInputStorage.length; i++){
+    let li = document.createElement("li");
+    li.textContent = carInputStorage[i];
+    carList.appendChild(li);
+   
+  }
+}
+
+function addFavCar(){
+  let userInput = carInput.value;
+  carInputStorage.push(userInput);
+  displayCars();
+};
+
+
+carAddBtn.addEventListener("click", addFavCar);
+
