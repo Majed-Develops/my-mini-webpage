@@ -38,6 +38,7 @@ body{
   border-radius: 10px;
   margin-bottom: 30px;
   text-align: left;
+  
 }
 
 
@@ -123,6 +124,7 @@ ul{
   padding: 5px;
   text-align: left;
   margin: 10px;
+  box-shadow: 10px 5px;
 }
 
 .likesCounter{
@@ -176,6 +178,7 @@ ul{
   margin: 10px;
   border: 3px solid black;
   border-radius: 10px;
+  box-shadow: 10px 5px;
 }
 
 .moreAboutMe h2{
@@ -264,6 +267,7 @@ transition: 0.3s;
   margin: 10px;
   border: 3px solid black;
   border-radius: 10px;
+  box-shadow: 10px 5px;
 }
 
 .photoSection h3{
@@ -320,6 +324,7 @@ transition: 0.3s;
   border-radius: 10px;
   padding: 5px;
   margin: 10px;
+  box-shadow: 10px 5px;
 }
 
 .myFavCars{
@@ -383,6 +388,7 @@ transition: 0.3s;
   margin: 10px;
   text-align: center;
   padding-bottom: 20px;
+  box-shadow: 10px 5px;
 }
 
 #helloButton{
