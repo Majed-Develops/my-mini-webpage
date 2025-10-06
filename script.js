@@ -284,8 +284,8 @@ helloBtn.addEventListener("click", helloCommunication);
 
 
 userInputNameBtn.addEventListener("click", function(){
-  let userNameInput = userInputName.value;
-  if(userNameInput == "Suleiman" || userNameInput == "suleiman" || userNameInput == "Alaa" || userNameInput =="alaa" || userNameInput == "Farah" || userNameInput == "farah"){
+  let userNameInput = userInputName.value.trim();
+  if(["suleiman", "alaa", "farah"].includes(userNameInput.toLowerCase())){
     userInputResponse.textContent = `${userNameInput.toUpperCase()}!!!!! What do you want?!`;
     userInputResponse.style.color = "black";
     userInputResponse.style.fontWeight = "bolder";
