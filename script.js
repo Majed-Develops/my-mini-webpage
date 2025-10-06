@@ -225,6 +225,8 @@ function displayCars(){
       setTimeout(() => { warning.textContent = ""; }, 3000);
     }else{
       for(let i = 0; i < carInputStorage.length; i++){
+        console.log(carInputStorage[i]);
+        
       let li = document.createElement("li");
       li.style.margin = "5px";
       let removeCarBtn = document.createElement("button");
@@ -256,9 +258,62 @@ function addFavCar(){
 
 
 
-  
+
 
 
 carAddBtn.addEventListener("click", addFavCar);
 
-removeCarBtn.addEventListener("click", removeCar);
+
+// Buttons Training Section
+
+const helloBtn = document.getElementById("helloButton");
+const hiBack = document.getElementById("helloButtonStatement");
+const userInputName = document.getElementById("userInputName");
+let userInputResponse = document.getElementById("userInputResponse");
+const userInputNameBtn = document.getElementById("userInputNameButton");
+
+
+
+function helloCommunication(){
+  hiBack.textContent = "Hi! Glad you're here!";
+  
+  setTimeout(() => { hiBack.textContent = ""; }, 3000);
+};
+
+helloBtn.addEventListener("click", helloCommunication);
+
+
+userInputNameBtn.addEventListener("click", function(){
+  let userNameInput = userInputName.value;
+  if(userNameInput == "Suleiman" || userNameInput == "suleiman" || userNameInput == "Alaa" || userNameInput =="alaa" || userNameInput == "Farah" || userNameInput == "farah"){
+    userInputResponse.textContent = `${userNameInput.toUpperCase()}!!!!! What do you want?!`;
+    userInputResponse.style.color = "black";
+    userInputResponse.style.fontWeight = "bolder";
+    userInputResponse.style.margin = "10px";
+    setTimeout(() => { userInputResponse.textContent = ""; }, 3000);
+  }else if(userNameInput == "Eman" || userNameInput == "eman"){
+      userInputResponse.textContent = "السلام عليكم حبوباتي";
+      userInputResponse.style.color = "deeppink";
+      userInputResponse.style.fontWeight = "bold";
+      userInputResponse.style.fontStyle = "italic";
+      userInputResponse.style.margin = "10px";
+      setTimeout(() => { userInputResponse.textContent = "";}, 3000);
+  }else if(userNameInput == "Bashir" || userNameInput == "bashir"){
+      userInputResponse.textContent = "السلام عليكم حبيبي";
+      userInputResponse.style.color = "dodgerblue";
+      userInputResponse.style.fontWeight = "bold";
+      userInputResponse.style.fontStyle = "italic";
+      userInputResponse.style.margin = "10px";
+      setTimeout(() => { userInputResponse.textContent = ""; }, 3000);
+  }else if(userNameInput === ""){
+      userInputResponse.textContent = "Please enter a name.";
+      userInputResponse.style.color = "white";
+      userInputResponse.style.margin = "10px";
+      userInputResponse.style.fontStyle = "italic";
+      setTimeout(() => { userInputResponse.textContent = ""; }, 3000);
+  }
+  else{ 
+    userInputResponse.textContent = `Hello ${userNameInput}! It's a pleasure to get to know you!`;
+    setTimeout(() => { userInputResponse.textContent = ""; }, 3000);
+  }
+});

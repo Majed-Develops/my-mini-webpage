@@ -259,7 +259,7 @@ transition: 0.3s;
 
 .photoSection{
   background-color: tomato;
-   text-align: left;
+  text-align: left;
   padding: 5px;
   margin: 10px;
   border: 3px solid black;
@@ -373,3 +373,61 @@ transition: 0.3s;
 #carInput::placeholder{
   color: white;
 }
+
+.buttonsTraining{
+  background-color: darkslateblue;
+  color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#helloButton{
+  background-color: deeppink;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  margin: 10px;
+}
+
+#helloButton:hover{
+  background-color: purple;
+  transition: 0.3s;
+}
+
+#helloButtonStatement{
+  margin-bottom: 10px;
+  color: white;
+  margin-top: 6px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#userInputName{
+  background-color: palevioletred;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+}
+
+#userInputName::placeholder{
+  color: white;
+}
+
+#userInputNameButton{
+  background-color: dodgerblue;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+#userInputNameButton:hover{
+  background-color: blue;
+  transition: 0.3s;
+}
+
